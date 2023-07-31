@@ -19,5 +19,42 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
+  noStroke()
+  fill(123)
+  rect(0,170,200,30)
+
+stroke(0,0,255)
+fill(0,0,255)
+ellipse(rectX+10,rectY-10,25) //bluelarge
+
+fill(0,0,255)
+ellipse(rectX+108,rectY+5,12) //blue
+
+fill(0)  
+rect(rectX,rectY,rect_width,rect_height) //poles
+
+fill(0)  
+rect(rectX+100,rectY+10,rect_width-5,rect_height-30) //poles
+
+fill(120)
+rect(rectX,rectY,rect_width,rect_height-90) //greybox
+
+fill(120)
+rect(rectX+100,rectY+10,rect_width-5,rect_height-95) //greybox
+
+stroke(0,0,255)
+strokeWeight(1)
+line(rectX+10,rect_height-10,rectY+10,rect_width+85) //firstline
+
+stroke(0,0,255)
+strokeWeight (1)
+line(rectY+10,rectX+105,200,90) //secondline
+
+stroke(0)
+fill(0)
+ellipse(rectX+108,rectY+4,6) //blackpart
+fill(0)
+ellipse(rectX+10,rectY-10,15) //bluepart
+
+
 }
